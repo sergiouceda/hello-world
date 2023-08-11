@@ -5,7 +5,7 @@ try {
 }catch(e){}
 
 try {
-  document.querySelector("div.gsc-adBlock").remove();
+  document.querySelectorAll("*[class*='gsc-adBlock']")).forEach(e => e.remove());
 }catch(e){}
 
 try {
