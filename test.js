@@ -12,3 +12,7 @@ try {
   document.querySelectorAll("*[class*='ezoic']").forEach(e => e.remove());
   document.querySelector("body").style.fontSize ="16px";
 }catch(e){}
+
+try {
+  document.querySelector("#containerBlockLayer").remove();
+}catch(e){}
