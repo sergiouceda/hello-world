@@ -13,6 +13,3 @@ try {
   document.querySelector("body").style.fontSize ="16px";
 }catch(e){}
 
-try {
-  document.querySelector("#containerBlockLayer").remove();
-}catch(e){}
