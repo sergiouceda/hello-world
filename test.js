@@ -8,8 +8,4 @@ try {
   document.querySelectorAll("*[class*='gsc-adBlock']").forEach(e => e.remove());
 }catch(e){}
 
-try {
-  document.querySelectorAll("*[class*='ezoic']").forEach(e => e.remove());
-  document.querySelector("body").style.fontSize ="16px";
-}catch(e){}
 
