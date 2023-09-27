@@ -8,6 +8,7 @@ try {
   document.querySelectorAll("*[class*='gsc-adBlock']").forEach(e => e.remove());
 }catch(e){}
 
+/*
 if(window.location.host == "cse.google.com"){
        
         function removeTarget(){
@@ -17,6 +18,7 @@ if(window.location.host == "cse.google.com"){
         setInterval(removeTarget, 500);        
 
 }
+*/
 
 
 
