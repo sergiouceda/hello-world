@@ -22,7 +22,7 @@ if(window.location.host == "cse.google.com"){
 if(window.location.host == "www.wired.com"){ 
   document.querySelectorAll("noscript").forEach(ns => {
     try{
-      var imgsrc = ns.innerHTML.match(/img.*src=\"(.*?jpg)\"/)[1];
+      var imgsrc = ns.innerHTML.match(/img.*src=\"(.*?)\"/)[1];
       console.log(imgsrc);
       var newimg = document.createElement('img');
       newimg.setAttribute('src',imgsrc);
