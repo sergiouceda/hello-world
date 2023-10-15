@@ -24,7 +24,8 @@ if(window.location.host == "www.wired.com"){
   document.querySelectorAll("figure").forEach(fig => {
     try{
       var img = document.createElement('div');
-      img.innerHTML = fig.querySelector('noscript').innerHTML;
+      var parsedHtml = parser.parseFromString(fig.querySelector('noscript').innerHTML,'text/xml')
+      img.innerHTML = parsedHtml;
       fig.replaceWith(img);
     }catch(e){};
   })   
