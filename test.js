@@ -26,7 +26,7 @@ if(window.location.host == "www.wired.com"){
       console.log(imgsrc);
       var newimg = document.createElement('img');
       newimg.setAttribute('src',imgsrc);
-      ns.parentNode.parentNode.parentNode.appendChild(newimg);
+      ns.closest("*[class*=ontainer]").appendChild(newimg);
     }catch(e){}
   });
   
