@@ -30,6 +30,10 @@ if(window.location.host == "www.wired.com"){
     }catch(e){}
   });
   
+  try{
+    document.querySelectorAll("div[class*='content-ad']").forEach(el => el.remove()) 
+  }catch(e){}
+  
 }
 
 
