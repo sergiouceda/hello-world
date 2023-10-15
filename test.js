@@ -20,15 +20,16 @@ if(window.location.host == "cse.google.com"){
 }
 */
 if(window.location.host == "www.wired.com"){ 
-  
   document.querySelectorAll("figure").forEach(fig => {
     try{
-      var img = document.createElement('div');
-      var parsedHtml = parser.parseFromString(fig.querySelector('noscript').innerHTML,'text/xml')
-      img.innerHTML = parsedHtml;
-      fig.replaceWith(img);
+      var artImg = document.createElement('img');
+      var tempDiv = document.createElement('div');
+      tempDiv.innerHTML = fig.querySelector('noscript').innerHTML;
+      artImg.setAttribute('src', tempDiv.querySelector('img').getAttribute('src'));
+      fig.replaceWith(artImg);
     }catch(e){};
-  })   
+  })  
+}
   
 }
 
