@@ -19,6 +19,17 @@ if(window.location.host == "cse.google.com"){
 
 }
 */
+if(window.location.host == "www.wired.com"){ 
+  
+  document.querySelectorAll("figure").forEach(fig => {
+    try{
+      var img = document.createElement('div');
+      img.innerHTML = fig.querySelector('noscript').innerHTML;
+      fig.replaceWith(img);
+    }catch(e){};
+  })   
+  
+}
 
 
 
